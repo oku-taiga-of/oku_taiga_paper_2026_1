@@ -1,6 +1,9 @@
 # Analysis script for SNP enrichment in gene regions based on positional information using regioneR
 This directory provides R scripts and example data used for analysis of genomic region enrichment by using regioneR in the accompanying manuscript.
 
+- **Version**: v1.0  
+- **Last updated**: 2026-01-19
+
 ## Files
 ### Analysis R scripts
 `GB_regioneR.R`: When referring to the gene body as the gene region, use this one.

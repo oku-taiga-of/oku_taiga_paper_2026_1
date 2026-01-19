@@ -43,18 +43,26 @@ When published on GitHub, `renv/library` is not included.
 
 ## Run CLI commands (example)
 ### When the gene body is defined as the gene region
-`Rscript GB_regioneR.R <trait_category> <trait_name> <trait_ID> <LD_r> <LD_pop> <bed_tag> <CORES>`
+```bash
+Rscript GB_regioneR.R <trait_category> <trait_name> <trait_ID> <LD_r> <LD_pop> <bed_tag> <CORES>
+```
 Command examples corresponding to the sample files
-`Rscript GB_regioneR.R Endurance MUO2 0004887 r2 nonAFR ORF 4`
+```bash
+Rscript GB_regioneR.R Endurance MUO2 0004887 r2 nonAFR ORF 4
+```
 ### When the expansion region is defined as the gene region
-`Rscript outGB_regioneR.R <trait_category> <trait_name> <trait_ID> <LD_r> <LD_pop> <bed_tag_upstream> <bed_tag_downstream> <CORES>`
+```bash
+Rscript outGB_regioneR.R <trait_category> <trait_name> <trait_ID> <LD_r> <LD_pop> <bed_tag_upstream> <bed_tag_downstream> <CORES>
+```
 Command examples corresponding to the sample files
-`Rscript outGB_regioneR.R Endurance MUO2 0004887 r2 nonAFR 2.0 0.2 4`
+```bash
+Rscript outGB_regioneR.R Endurance MUO2 0004887 r2 nonAFR 2.0 0.2 4
+```
 ### The command arguments
-- <trait_category>, <trait_name>, <trait_ID>, <LD_r>, <LD_pop> : For each SNP dataset loaded: - Trait category - Trait abbreviation - Trait ID - r^2 threshold for LD pruning - Population used for LD pruning in the genomic dataset. Arguments for creating paths for SNP data to be loaded and output files.
-- <bed_tag> : An argument used only when using the gene body, to be declared explicitly in the command.
-- <bed_tag_upstream> <bed_tag_downstream> : Arguments used only when using the expansion region, used to create paths for the expansion　region file to be loaded and the output file. The former is the length of the upstream expanded region, and the latter is the length of the downstream expanded region.
-- <CORES> : The analysis script can split for loop processing into chunks and run them in parallel across multiple cores to reduce run time. This argument specifying the number of cores to use for execution.
+- `<trait_category>, <trait_name>, <trait_ID>, <LD_r>, <LD_pop>` : For each SNP dataset loaded: - Trait category - Trait abbreviation - Trait ID - r^2 threshold for LD pruning - Population used for LD pruning in the genomic dataset. Arguments for creating paths for SNP data to be loaded and output files.
+- `<bed_tag>` : An argument used only when using the gene body, to be declared explicitly in the command.
+- `<bed_tag_upstream>` <bed_tag_downstream> : Arguments used only when using the expansion region, used to create paths for the expansion　region file to be loaded and the output file. The former is the length of the upstream expanded region, and the latter is the length of the downstream expanded region.
+- `<CORES>` : The analysis script can split for loop processing into chunks and run them in parallel across multiple cores to reduce run time. This argument specifying the number of cores to use for execution.
 Note:
 - Arguments other than the core count are used to create input and output file paths, so they do not impact analysis except for the presence or absence of input files.
 - When inputting data that follows naming rules different from the example provided, the script must be modified to match those naming rules.

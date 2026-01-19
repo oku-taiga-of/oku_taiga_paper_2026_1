@@ -15,6 +15,7 @@ We thank the developers of **regioneR** for providing and maintaining a robust a
 ## Files
 ### Analysis R scripts
 `GB_regioneR.R`: When referring to the gene body as the gene region, use this one.
+
 `outGB_regioneR.R`: When the gene region is the expansion region, use this one.
 
 Note:
@@ -26,8 +27,11 @@ Note:
 
 ### Example input file
 `example_inputSNP_Endurance_nonAFR_LD_r2_MUO2_0004887.tsv` : Inputting SNP data
+
 `gene_id_name_map.csv` : File for referencing gene symbol names using gene IDs as keys when outputting results
+
 `gene_region_ORF.bed` : `.bed` files for each gene region (gene body data)
+
 `gene_region_u5.0k_d1.5k.bed` : `.bed` files for each gene region (data for extended regions), File for the region expanded 5.0k bp upstream and 1.5k bp downstream.
 
 Note:
@@ -37,9 +41,13 @@ Note:
 
 ### Environment records
 `renv.lock`: R package environment lockfile
+
 `ENV_sessionInfo.txt`: Information about the R 
+
 `ENV_bioconductor_version.txt`: Version of bioconductor
+
 `ENV_installed_packages.csv`: Information about installed packages
+
 
 ## Requirements
 - R version: see `ENV_sessionInfo.txt`

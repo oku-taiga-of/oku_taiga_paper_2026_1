@@ -16,6 +16,7 @@ We thank the developers of **regioneR** for providing and maintaining a robust a
 ### Analysis R scripts
 `GB_regioneR.R`: When referring to the gene body as the gene region, use this one.
 `outGB_regioneR.R`: When the gene region is the expansion region, use this one.
+
 Note:
 - The two scripts differ only in analysis mode; they share the same software environment.
 - These scripts are intended to be executed via the CLI.
@@ -28,6 +29,7 @@ Note:
 `gene_id_name_map.csv` : File for referencing gene symbol names using gene IDs as keys when outputting results
 `gene_region_ORF.bed` : `.bed` files for each gene region (gene body data)
 `gene_region_u5.0k_d1.5k.bed` : `.bed` files for each gene region (data for extended regions), File for the region expanded 5.0k bp upstream and 1.5k bp downstream.
+
 Note:
 - These are example input files, so they are the minimum files required for demonstration and reproducibility checks.
 - Since the script references columns, when running it in a different file, ensure the file structure matches the one containing the columns.
@@ -74,6 +76,7 @@ Rscript outGB_regioneR.R Endurance MUO2 0004887 r2 nonAFR 2.0 0.2 4
 - `<bed_tag>` : An argument used only when using the gene body, to be declared explicitly in the command.
 - `<bed_tag_upstream>` <bed_tag_downstream> : Arguments used only when using the expansion region, used to create paths for the expansion　region file to be loaded and the output file. The former is the length of the upstream expanded region, and the latter is the length of the downstream expanded region.
 - `<CORES>` : The analysis script can split for loop processing into chunks and run them in parallel across multiple cores to reduce run time. This argument specifying the number of cores to use for execution.
+
 Note:
 - Arguments other than the core count are used to create input and output file paths, so they do not impact analysis except for the presence or absence of input files.
 - When inputting data that follows naming rules different from the example provided, the script must be modified to match those naming rules.

@@ -3,8 +3,8 @@ This directory provides R scripts and example data used for analysis of genomic 
 
 ## Files
 ### Analysis R scripts
-- `GB_regioneR.R`: When referring to the gene body as the gene region, use this one.
-- `outGB_regioneR.R`: When the gene region is the expansion region, use this one.
+`GB_regioneR.R`: When referring to the gene body as the gene region, use this one.
+`outGB_regioneR.R`: When the gene region is the expansion region, use this one.
 Note:
 - The two scripts differ only in analysis mode; they share the same software environment.
 - These scripts are intended to be executed via the CLI.
@@ -13,25 +13,25 @@ Note:
 - When using extended regions, the loaded extended region information may exceed the endpoints of the chromosome in the referenced genome, potentially causing a warning. Within the script, the exceeding portion is trimmed, so it does not directly cause a problem.
 
 ### Example input file
-- `example_inputSNP_Endurance_nonAFR_LD_r2_MUO2_0004887.tsv` : Inputting SNP data
-- `gene_id_name_map.csv` : File for referencing gene symbol names using gene IDs as keys when outputting results
-- `gene_region_ORF.bed` : `.bed` files for each gene region (gene body data)
-- `gene_region_u5.0k_d1.5k.bed` : `.bed` files for each gene region (data for extended regions), File for the region expanded 5.0k bp upstream and 1.5k bp downstream.
+`example_inputSNP_Endurance_nonAFR_LD_r2_MUO2_0004887.tsv` : Inputting SNP data
+`gene_id_name_map.csv` : File for referencing gene symbol names using gene IDs as keys when outputting results
+`gene_region_ORF.bed` : `.bed` files for each gene region (gene body data)
+`gene_region_u5.0k_d1.5k.bed` : `.bed` files for each gene region (data for extended regions), File for the region expanded 5.0k bp upstream and 1.5k bp downstream.
 Note:
 - These are example input files, so they are the minimum files required for demonstration and reproducibility checks.
 - Since the script references columns, when running it in a different file, ensure the file structure matches the one containing the columns.
 - Regarding SNP data, to prevent errors, each SNP must be assigned a unique SNP ID.
 
 ### Environment records
-- `renv.lock`: R package environment lockfile
-- `ENV_sessionInfo.txt`
-- `ENV_bioconductor_version.txt`
-- `ENV_installed_packages.csv`
+`renv.lock`: R package environment lockfile
+`ENV_sessionInfo.txt`: Information about the R 
+`ENV_bioconductor_version.txt`: Version of bioconductor
+`ENV_installed_packages.csv`: Information about installed packages
 
 ## Requirements
 - R version: see `ENV_sessionInfo.txt`
 - macOS or Linux (the scripts use `parallel::mclapply()`)
-The analysis was performed using a MacBook Pro (M1 Max) with 64GB of memory. Depending on the number of cores used and the SNP data, the analysis completed within a few minutes to a few hours.
+- The analysis was performed using a MacBook Pro (M1 Max) with 64GB of memory. Depending on the number of cores used and the SNP data, the analysis completed within a few minutes to a few hours.
 
 ## Setup
 Restore the R package environment using **renv**:

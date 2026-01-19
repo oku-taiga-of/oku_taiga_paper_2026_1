@@ -5,7 +5,9 @@ This directory provides R scripts and example data used for analysis of genomic 
 - **Last updated**: 2026-01-19
 
 This script used **regioneR**, the relevant Bioconductor page and papers are listed below.
+
 [Bioconductor page](https://www.bioconductor.org/packages/release/bioc/html/regioneR.html)
+
 [Bernat Gel, Anna Díez-Villanueva, Eduard Serra, Marcus Buschbeck, Miguel A. Peinado, Roberto Malinverni, regioneR: an R/Bioconductor package for the association analysis of genomic regions based on permutation tests, Bioinformatics, Volume 32, Issue 2, January 2016, Pages 289–291, https://doi.org/10.1093/bioinformatics/btv562](https://academic.oup.com/bioinformatics/article/32/2/289/1744157)
 
 We thank the developers of **regioneR** for providing and maintaining a robust and well-documented framework for genomic region enrichment analysis.

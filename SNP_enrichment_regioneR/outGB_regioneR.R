@@ -21,7 +21,7 @@ ld_r2 <- args[4]
 ld_pop <- args[5]
 up_frg <- args[6]
 down_frg <- args[7]
-CORES <- args[8]
+CORES <- as.integer(args[8])
 
 
 ##参照ゲノムデータ

@@ -76,7 +76,6 @@ mask    <- IRanges::trim(mask);    mask    <- mask   [width(mask   ) > 0]
 #検定
 ##設定
 K <- 50000
-CORES    <- 4
 genome_ref <- hgmask
 use_mask <- TRUE
 

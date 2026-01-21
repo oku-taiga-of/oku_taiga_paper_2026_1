@@ -114,7 +114,7 @@ Rscript outGB_regioneR.R Endurance MUO2 0004887 r2 nonAFR 2.0 0.2 4
 ```
 or
 ```bash
-Rscript outGB_regioneR.R Endurance Power GPSM 0006941 r2 nonAFR 2.0 0.2 4
+Rscript outGB_regioneR.R Power GPSM 0006941 r2 nonAFR 2.0 0.2 4
 ```
 Both analysis scripts will return an error message and terminate without generating an output file if no analyzable genes are found.
 As shown in the example, performing an analysis of the expanded region for MUO2 will leads to this state.

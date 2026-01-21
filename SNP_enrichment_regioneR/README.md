@@ -130,6 +130,6 @@ Note:
 - When inputting data that follows naming rules different from the example provided, the script must be modified to match those naming rules.
 
 ## Output file
-This R script outputs two files: one containing results for all genes used in the analysis, and another containing results only for significant genes.Both files are saved in the same directory. To change this, modify the output file path in the script.
+This R script outputs two files: one containing results for all genes (genes with observed overlap) used in the analysis, and another containing results only for significant genes.Both files are saved in the same directory. To change this, modify the output file path in the script.
 
 

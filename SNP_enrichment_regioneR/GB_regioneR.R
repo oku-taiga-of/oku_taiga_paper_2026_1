@@ -193,7 +193,7 @@ cat("Saved the results (for all genes analyzed)", out_csv, "\n")
 thr_obs <- 1
 thr_p   <- 0.01
 thr_fdr <- 0.1
-##条件でフィルタ：obs≥1 & p_emp≤0.01 & FDR≤0.05
+##条件でフィルタ：obs≥1 & p_emp≤0.01 & FDR≤0.1
 hits <- subset(res_gene, obs >= thr_obs & p_emp <= thr_p & FDR_BH <= thr_fdr)
 ##見やすい並び（p小さい→z大きい→gene名）
 hits <- hits[order(hits$p_emp, -hits$z, hits$gene), ]

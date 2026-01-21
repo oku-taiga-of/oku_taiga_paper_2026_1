@@ -20,7 +20,7 @@ trait_id <- args[3]
 ld_r2 <- args[4]
 ld_pop <- args[5]
 bed_tag        <- args[6]
-CORES <- args[7]
+CORES <- as.integer(args[7])
 
 ##参照ゲノムデータ
 hg     <- BSgenome.Hsapiens.UCSC.hg19 

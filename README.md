@@ -5,9 +5,9 @@ This repository is for publishing the scripts used in the following paper.
 ## Paper Information
 
 
-## Folder structure
-- `SNP_enrichment_regioneR` : Folder for analyzing enrichment in gene regions based on SNP position information using regioneR
-- `Calc_Zscore_regioneReloaded` : Folder for calculating local Z-scores for gene regions based on SNP positions using regioneReloaded
+## Directory structure
+- `SNP_enrichment_regioneR` : Directory for analyzing enrichment in gene regions based on SNP position information using regioneR
+- `Calc_Zscore_regioneReloaded` : Directory for calculating local Z-scores for gene regions based on SNP positions using regioneReloaded
 
 Each folder contains the information required for environment setup, analysis scripts, and example input files for the scripts.
 

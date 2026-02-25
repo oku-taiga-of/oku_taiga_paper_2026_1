@@ -1,6 +1,8 @@
 # oku_taiga_paper_2026_1
 
 This repository is for publishing the scripts used in the following paper.
+Genetic basis and functional architectures underlying athletic performance revealed by integrative analysis of GWAS-associated SNPs
+
 
 ## Paper Information
 

@@ -120,7 +120,7 @@ reg_list <- reg_list[lengths(reg_list) > 0]
 
 #FDRのフィルタを通った遺伝子リストの読み込み
 sig_file <- sprintf(
-  "significant_gene_outGB_u%sk_d%sk_result_rep_%s_%s_LD_%s_%s_%s_.csv",
+  "significant_gene_exp_outGB_u%sk_d%sk_result_rep_%s_%s_LD_%s_%s_%s_.csv",
   up_frg, down_frg, K_global, ld_pop, ld_r2, trait_name, trait_id
 )
 sig_annot <- read.csv(sig_file, stringsAsFactors = FALSE)

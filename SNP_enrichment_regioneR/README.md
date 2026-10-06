@@ -158,6 +158,12 @@ The script prints a notice whenever `K` differs from 50000, and **the value of K
 file name**, so a trial result cannot be mistaken for a result reported in the manuscript.
 Use `K = 50000` for any analysis you intend to interpret.
 
+> **Why a trial run is not interpretable.** The empirical p value cannot be smaller than
+> `1 / (K + 1)`, so with `K = 200` the smallest attainable p is about 0.005. Every gene with at least
+> one observed overlap then reaches the same minimum p, and after FDR correction they all pass the
+> 0.05 threshold — in the example above the "significant" file simply repeats the "all gene" file.
+> This is a resolution artefact of the small `K`, not a result.
+
 ### Fixed analysis settings
 
 These are set inside the script rather than exposed as arguments, because they define the test:
